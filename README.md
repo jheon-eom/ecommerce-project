@@ -1,4 +1,4 @@
-# ecommerce-project
+# senior-project
 
 # 분산 E-commerce 플랫폼 개발 커리큘럼
 **대상:** Java/Kotlin, Spring Boot 5년차 백엔드 개발자  
