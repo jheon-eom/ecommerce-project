@@ -11,7 +11,7 @@
 
 ### Week 1: 아키텍처 설계
 - **도메인 모델링**
-  - 주요 도메인: User, Product, Order, Payment, Inventory, Notification
+  - 주요 도메인: User, Product, Order
   - 도메인 간 경계 및 의존성 정의
   - Event Storming으로 비즈니스 플로우 시각화
 
@@ -31,6 +31,7 @@
   - Database: PostgreSQL (주문/결제), MongoDB (상품 카탈로그)
   - Search: Elasticsearch
   - Optional: Service Mesh (Istio) - Phase 6에서 도입 고려
+  - Observility: Grafana, Prometheus, Kibana
 
 ### Week 2: 개발 환경 구성
 - **로컬 개발 환경**
@@ -44,7 +45,7 @@
   - Conventional Commits 규칙
 
 - **코드 품질 도구 설정**
-  - Ktlint, Detekt (코드 스타일)
+  - Ktlint, Detekt (코드 스타일) - Ktlint 적용
   - JaCoCo (테스트 커버리지)
   - SonarQube (정적 분석)
 
