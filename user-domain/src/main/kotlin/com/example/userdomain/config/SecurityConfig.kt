@@ -26,7 +26,12 @@ class SecurityConfig(
             .sessionManagement { it.sessionCreationPolicy(SessionCreationPolicy.STATELESS) }
             .authorizeHttpRequests { authorize ->
                 authorize
-                    .requestMatchers("/api/auth/**", "/h2-console/**").permitAll()
+                    .requestMatchers(
+                        "/",
+                        "/h2-console/**",
+                        "/api/auth/**",
+                    )
+                    .permitAll()
                     .anyRequest().authenticated()
             }
             .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter::class.java)
